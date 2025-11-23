@@ -414,7 +414,7 @@ For support, contact:
 
 ---
 
-**Made with ❤️ for UiTM students**
+**For UiTM students**
 
 Last Updated: November 23, 2025
 
