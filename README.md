@@ -358,32 +358,11 @@ SELECT * FROM booking WHERE stud_num = 'STUDENT_ID' ORDER BY start_date DESC;
 SELECT id_booking, status, start_date, end_date FROM booking WHERE status = 'pending';
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 👥 Team
 
-- **Developer**: Amin Abudin
+- **Developer**: Amirul Amin
 - **Institution**: Universiti Teknologi MARA (UiTM)
 - **System**: University Equipment Rental Management
-
-## 📞 Support
-
-For support, contact:
-- **Email**: info@uniequip.edu.my
-- **Phone**: +603-5544 2000
-- **Website**: https://www.uniequip.edu.my
 
 ## 🙏 Acknowledgments
 
