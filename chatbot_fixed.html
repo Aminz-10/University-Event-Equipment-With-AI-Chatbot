@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>✅ Chatbot Fixed!</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+            padding: 50px;
+            text-align: center;
+        }
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 0.6s ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        h1 {
+            color: #28a745;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .issue-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .issue-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .issue-box p {
+            color: #856404;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .fix-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .fix-box h3 {
+            color: #155724;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .fix-box p {
+            color: #155724;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .next-steps {
+            background: #d1ecf1;
+            border: 2px solid #0c5460;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+        }
+        .next-steps h3 {
+            color: #0c5460;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .step-item {
+            color: #0c5460;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        .step-item:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #0c5460;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        .button.secondary {
+            background: #6c757d;
+        }
+        .button.secondary:hover {
+            box-shadow: 0 10px 20px rgba(108, 117, 125, 0.3);
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #d32f2f;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>Chatbot Fixed!</h1>
+        <p class="subtitle">Database column mismatch resolved</p>
+        
+        <div class="issue-box">
+            <h3>What Was Wrong?</h3>
+            <p>The chatbot was looking for the wrong database column names:</p>
+            <p>❌ Looking for: <code>equipment_id</code>, <code>equipment_name</code>, <code>quantity</code></p>
+            <p>✓ Actually exists: <code>id_equipment</code>, <code>name</code>, <code>qty</code></p>
+        </div>
+        
+        <div class="fix-box">
+            <h3>What Was Fixed?</h3>
+            <p>Updated all 8 query handlers in <code>ai_openrouter_api.php</code> to use the correct column names:</p>
+            <p>✓ Equipment availability queries</p>
+            <p>✓ Category listing</p>
+            <p>✓ Quantity checks</p>
+            <p>✓ Booking queries</p>
+            <p>✓ All other database operations</p>
+        </div>
+        
+        <div class="next-steps">
+            <h3>What You Need to Do</h3>
+            <div class="step-item">Refresh your browser (press F5 or Ctrl+R)</div>
+            <div class="step-item">Go back to the dashboard</div>
+            <div class="step-item">Click the chatbot (bottom-right corner)</div>
+            <div class="step-item">Ask any question about equipment</div>
+            <div class="step-item">You should get a real response!</div>
+        </div>
+        
+        <div class="button-group">
+            <a href="user_dashboard.php" class="button">Go to Dashboard</a>
+            <a href="chatbot_debug.php" class="button secondary">View Debug Info</a>
+        </div>
+        
+        <p style="margin-top: 30px; color: #999; font-size: 13px;">
+            If you still have issues, visit <code>chatbot_debug.php</code> for diagnostic information.
+        </p>
+    </div>
+</body>
+</html>
